@@ -1,0 +1,55 @@
+
+
+body{
+  background-color: bisque;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset{
+  background: linear-gradient(orange, darkorange);
+  border: 5px solid #000;
+  padding: 20px;
+  margin: 20px;
+  font-size: 130%;
+  border-radius: 50px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+#tablero{
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+}
+
+#tablero .ficha{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  margin: 5px;
+  border: 2px solid #000;
+  /* transform-style: preserve-3d; */
+  animation: iniciar 3s;
+}
+
+
+@keyframes iniciar {
+  20%,
+  90% {
+      transform: rotateY(180deg);
+  }
+
+  0%,
+  100% {
+      transform: rotateY(0deg);
+  }
+}
