@@ -35,11 +35,26 @@ body{
   position: relative;
   width: 100px;
   height: 100px;
-  background-color: gold;
+  background: linear-gradient(orange, darkorange);
   margin: 5px;
   border: 2px solid #000;
-  /* transform-style: preserve-3d; */
-  /* animation: iniciar 3s; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  animation: iniciar 3s;
+}
+
+.ambos_lados{
+  position: absolute;
+  font-size: 450%;
+  backface-visibility: hidden;
+  background: linear-gradient(orange, darkorange);
+  background: blueviolet
+}
+
+.ficha_frente{
+  transform: rotateY(180deg);
 }
 
 
